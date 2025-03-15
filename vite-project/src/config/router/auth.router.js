@@ -1,7 +1,7 @@
 export const authRoutes = [
-    ...commonRoute,
+{/*    ...commonRoute,
     {path:"" , element:<></>},
     {path:"" , element:<></>},
     {path:"" , element:<></>},
-    {path:"" , element:<></>},
+    {path:"" , element:<></>},*/}
 ]
