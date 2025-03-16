@@ -2,6 +2,9 @@
 @theme{
   --radius-xl:34px;
 }
+.backgroundSize{
+  background-size:20px 20px;
+}
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
