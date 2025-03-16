@@ -1,6 +1,7 @@
 @import "tailwindcss";
 @theme{
   --radius-xl:34px;
+  --radius-fullXl:100%;
 }
 .backgroundSize{
   background-size:20px 20px;

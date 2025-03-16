@@ -3,8 +3,8 @@ import React from "react";
 import { Link } from "react-router";
 const SideBar = () => {
   return (
-    <div className="w-[308px] h-[600px] bg-[rgb(243,244,246)] rounded-xl p-[20px] my-3 mx-4">
-      <div className="h-15 pr-[95px] pt-[10px] mx-auto font-medium text-2xl  bg-[url(resources/image.png)]  bg-contain bg-no-repeat bg-right">
+    <div className="w-[298px] h-[600px] bg-[rgb(243,244,246)] rounded-xl p-[25px] my-3 mx-4">
+      <div className="h-15 pr-[95px] pt-[10px] mx-auto font-medium whitespace-nowrap text-xl lg:text-2xl  bg-[url(resources/image.png)]  bg-contain bg-no-repeat bg-right">
         اکادمی سپهر
       </div>
       <div className="w-25 cursor-pointer backgroundSize mt-5 pr-7 bg-[url(resources/home.png)] bg-no-repeat bg-right bg-contain">
