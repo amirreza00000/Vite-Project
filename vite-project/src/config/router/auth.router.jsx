@@ -5,6 +5,6 @@ import Register from "../../components/LoginForm/register";
 
 export const authRoutes = createBrowserRouter([
     {/*...commonRoute*/},
-    {path:"/" , element: <Register/>},
+    {path:"/register" , element: <Register/>},
     {path:"/login" , element: <Login/>}
 ])

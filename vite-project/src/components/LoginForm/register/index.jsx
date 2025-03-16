@@ -16,7 +16,8 @@ const Register = () => {
           <Field placeholder="نام"/>
           <Field placeholder="شماره تماس"/>
           <Field placeholder="رمز عبور"/>    
-          <button>ادامه</button>      
+          <button><a href='/login'>ادامه</a></button>
+          <a href=''>قوانین و شرایط</a>
         </Form>
       </Formik>
     </div>

@@ -1,0 +1,57 @@
+.loginPage{
+    background: whitesmoke;
+    width: 700px;
+    min-height: 500px;
+    border-radius: 20px;
+    padding: 20px;
+}
+form{
+    /* border: 1px solid red; */
+    padding: 5px;
+    width: 400px;
+    min-height: 500px;
+    margin: auto;
+    color: black;
+    box-shadow: 0 0 15px 10px #ccc;
+    border-radius: 20px;
+    text-align: end;
+}
+form > h2{
+    text-align: center;
+}
+form > input{
+    width: 265px;
+    height: 35px;
+    padding: 5px;
+    margin: 20px 10px;
+    background: #aaa;
+    color: black;
+    text-align: end;
+    font-size: 17px;
+    border: 0 none;
+    border-radius: 10px;
+    outline: none;
+}
+form > button{
+    padding: 0 0;
+    overflow: hidden;
+    width: 200px;
+    display: block;
+    margin: 20px auto;
+    border: 0  none;
+    position: relative;
+}
+form > button > a{
+    color: black;
+    display: block;
+    width:100%;
+    height: 100%;
+    font-size: 25px;
+    background-color: rgb(57, 109, 252);
+}
+form > .question > p,
+form > .question > a{
+    /* border: 1px solid red; */
+    display: inline;
+    padding: 5px;
+}
