@@ -1,7 +1,7 @@
 import React from 'react'
 import SideBar from '../../components/common/panelSideBar'
 
-const panel = () => {
+const Panel = () => {
   return (
     <>
       <SideBar/>
@@ -9,4 +9,4 @@ const panel = () => {
   )
 }
 
-export default panel
+export default Panel
