@@ -11,7 +11,7 @@ function App() {
   return (
     <>
      {/* routers */}
-      <Panel/>
+      <Panel name="یاسین"/>
     </>
   )
 }
