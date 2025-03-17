@@ -9,8 +9,29 @@
 .backgroundSize2{
   background-size: 30px 30px;
 }
+
+
 body{
   direction: rtl;
+}
+@keyframes move{
+  0%{
+    left:800px;
+
+  }
+  100%{
+    left:0;
+    transform: rotate(360deg);
+  }
+}
+@keyframes moveIt{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    
+  }
 }
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;

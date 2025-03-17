@@ -3,7 +3,7 @@ import React from "react";
 import { Link } from "react-router";
 const SideBar = () => {
   return (
-    <div className="absolute top-12 mx-7 z-20 md:mx-4 h-125 w-9/10 md:block min-w-70 md:w-3/10 md:h-163 bg-[rgb(243,244,246)] rounded-xl p-[25px] my-3 ">
+    <div className="absolute animate-[move_0.5s_1_linear] md:animate-[moveIt_2s_1_linear] duration-1000 md:static top-12 mx-5 z-20 md:mx-4 h-125 w-9/10 md:block min-w-70 md:max-w-90 md:w-3/10 md:h-163 bg-[rgb(243,244,246)] rounded-xl p-[25px] my-3 ">
       <div className="cursor-pointer h-15 pr-[95px] pt-[10px] mx-auto font-medium whitespace-nowrap text-xl lg:text-2xl  bg-[url(resources/image.png)]  bg-contain bg-no-repeat bg-right">
         اکادمی سپهر
       </div>

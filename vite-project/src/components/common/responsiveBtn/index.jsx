@@ -1,17 +1,16 @@
 import React from "react";
 
-const HamburgerBtn = ({ className = "",setOpen}) => {
-   const onOpen=()=>{
-      setOpen((prev)=>{setOpen(!prev)});
-      
-   }
+const HamburgerBtn = ({ className = "", setOpen ,isOpen}) => {
+  const onOpen = () => {
+    setOpen(!isOpen);
+  };
 
   return (
     <button
-      onClick={()=>{onOpen()}}
-      className={
-        "bg-[url(resources/hamburgerMenuIco.png)] " + " " + className
-      }
+      onClick={() => {
+        onOpen();
+      }}
+      className={"bg-[url(resources/hamburgerMenuIco.png)] " + " " + className}
     ></button>
   );
 };
