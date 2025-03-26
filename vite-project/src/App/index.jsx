@@ -6,12 +6,11 @@ import { authRoutes } from '../config/router/auth.router'
 import Panel from '../screens/Panel'
 
 function App() {
-  const [count, setcount] = useState(0)
-
+  
   return (
     <>
-     {/* routers */}
-      <Panel name="یاسین"/>
+     
+      
     </>
   )
 }
