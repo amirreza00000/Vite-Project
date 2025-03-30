@@ -1,15 +1,39 @@
-import React from 'react'
-import Header from '../../components/common/Header'
-import Footer from '../../components/common/Footer'
+import React, { useEffect, useState } from "react";
+import Header from "../../components/common/Header";
+import Footer from "../../components/common/Footer";
+import News from "../../components/News/News";
+import NewsFromSameCategory from "../../components/News/NewsFromSameCategory";
+import { getBlogsDetail } from "../../core/services/api/getBlogsDetail";
+import { useParams } from "react-router-dom";
+import { getNewsFromSameCategory } from "../../core/services/api/getNewsFromSameCtegory";
 
 const BlogDetail = () => {
+  const [news, setNews] = useState({});
+  const [data, setData] = useState([]);
+  const { id } = useParams();
+  const getData = async () => {
+    const data = await getBlogsDetail(id);
+    setNews(data);
+  };
+  const getDataFromSameCategory = async () => {
+    const apiData = await getNewsFromSameCategory(2);
+    const filtered = apiData.filter((el) => el.id != id);
+    setData(filtered);
+  };
+  useEffect(() => {
+    getData();
+    getDataFromSameCategory();
+
+    window.scrollTo(0, 0);
+  }, [id]);
   return (
     <>
-      <Header/>
-        
-      <Footer/>
+      <Header />
+      <News news={news} />
+      <NewsFromSameCategory data={data} />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default BlogDetail
+export default BlogDetail;
