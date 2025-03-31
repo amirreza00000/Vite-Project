@@ -13,17 +13,17 @@ const BlogDetail = () => {
   const { id } = useParams();
   const getData = async () => {
     const data = await getBlogsDetail(id);
+    await getDataFromSameCategory(data.newsCatregoryId);
+
     setNews(data);
   };
-  const getDataFromSameCategory = async () => {
-    const apiData = await getNewsFromSameCategory(2);
+  const getDataFromSameCategory = async (catId) => {
+    const apiData = await getNewsFromSameCategory(catId);
     const filtered = apiData.filter((el) => el.id != id);
     setData(filtered);
   };
   useEffect(() => {
     getData();
-    getDataFromSameCategory();
-
     window.scrollTo(0, 0);
   }, [id]);
   return (
